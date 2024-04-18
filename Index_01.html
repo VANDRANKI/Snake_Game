@@ -27,7 +27,6 @@
     <script>
       const canvas = document.getElementById("gameCanvas");
       const ctx = canvas.getContext("2d");
-
       let snake = [
         { x: 160, y: 200 },
         { x: 140, y: 200 },
@@ -38,12 +37,10 @@
       let foodX;
       let foodY;
       let score = 0;
-
       function clearCanvas() {
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
       }
-
       function drawFood() {
         ctx.fillStyle = "lime";
         ctx.shadowColor = "black";
@@ -51,14 +48,12 @@
         ctx.fillRect(foodX, foodY, 20, 20);
         ctx.shadowBlur = 0;
       }
-
       function drawSnakePart(snakePart, index) {
         ctx.fillStyle = `rgba(128, 128, 128, ${1 - index / snake.length})`;
         ctx.strokeStyle = "black";
         ctx.fillRect(snakePart.x, snakePart.y, 20, 20);
         ctx.strokeRect(snakePart.x, snakePart.y, 20, 20);
       }
-
       function drawSnake() {
         snake.forEach(drawSnakePart);
       }

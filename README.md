@@ -20,14 +20,14 @@ To run this game, you need a modern web browser that supports HTML5 and JavaScri
 
 1. **Clone the Repository**
    ```bash
-   git clone [URL to your repository]
-   cd [repository name]
+   git clone [https://github.com/VANDRANKI/Snake_Game]
+   cd [Snake_Game]
 
-*Open the Game
-Open the index.html file in your web browser.
-**Controls**
+2. **Open the Game**
+-Open the index.html file in your web browser.
+3. **Controls**
 **Arrow Keys:** Use the arrow keys to change the direction of the snake.
-***Code Overview***
+4. **Code Overview**
 **canvas:** The HTML5 canvas element where the game is rendered.
 **ctx:** The 2D rendering context for the canvas.
 **snake:** An array representing the snake's segments.
